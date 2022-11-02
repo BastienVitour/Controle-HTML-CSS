@@ -1,0 +1,65 @@
+body {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: red;
+    color: white;
+    height: 900px;
+    padding-top: 15px;
+}
+
+.menu:hover {
+    background-color: rgb(255, 147, 147);
+    color: red;
+}
+
+.menu {
+    padding: 15px 200px 15px 0px;
+    margin: 0px 15px;
+}
+
+#not_nav {
+    display: flex;
+    flex-direction: column;
+    flex: 4;
+}
+
+header {
+    height: 20%;
+}
+
+#not_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header, footer {
+    background-color: rgb(138, 199, 38);
+}
+
+article {
+    height: 85%;
+}
+
+footer {
+    height: 15%;
+}
+
+#not_aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+aside {
+    background-color: rgb(242, 244, 211);
+    height: 720px;
+}
+
+header, article, aside, footer {
+    padding: 20px;
+}
