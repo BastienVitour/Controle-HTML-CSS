@@ -11,61 +11,89 @@
 
         <div id="form">
 
-            <fieldset>
+            <!--Formulaires avec un input textuel (+ la date)-->
 
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+            <fieldset id="text_inputs">
 
-                <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone">
+                <div class="rowpls">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <div class="rowpls">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
 
-                <label for="date-time">Pickup Date/Time</label>
-                <input type="datetime-local" name="date-time" id="date-time">
+                <div class="rowpls">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
 
-                <label for="place">Pickup Place</label>
-                <select name="place" id="place">
-                    <option value="orly">Orly</option>
-                    <option value="roissy">Roissy</option>
-                    <option value="montparnasse">Montparnasse</option>
-                    <option value="nord">Gare du Nord</option>
-                    <option value="est">Gare de l'Est</option>
-                </select>
+                <div class="rowpls">
+                    <label for="date-time">Pickup Date/Time</label>
+                    <input type="datetime-local" name="date-time" id="date-time">
+                </div>
 
-                <label for="dropoff">Dropoff Place</label>
-                <input type="text" name="dropoff" id="dropoff">
+                <div class="rowpls">
+                    <label for="place">Pickup Place</label>
+                    <select name="place" id="place">
+                        <option value="orly">Orly</option>
+                        <option value="roissy">Roissy</option>
+                        <option value="montparnasse">Montparnasse</option>
+                        <option value="nord">Gare du Nord</option>
+                        <option value="est">Gare de l'Est</option>
+                    </select>
+                </div>
+
+                <div class="rowpls">
+                    <label for="dropoff">Dropoff Place</label>
+                    <input type="text" name="dropoff" id="dropoff">
+                </div>
 
             </fieldset>
+
+            <!--Cases à cocher-->
 
             <fieldset>
 
                 <p>
                     Which taxi do you require ? <br>
 
-                    <input type="radio" name="taxi" id="taxi" value="car">
-                    <label for="car">Car</label> <br>
+                    <div class="options">
+                        <input type="radio" name="taxi" id="taxi" value="car">
+                        <label for="car">Car</label> <br>
+                    </div>
 
-                    <input type="radio" name="taxi" id="taxi" value="van">
-                    <label for="van">Van</label> <br>
+                    <div class="options">
+                        <input type="radio" name="taxi" id="taxi" value="van">
+                        <label for="van">Van</label> <br>
+                    </div>
 
-                    <input type="radio" name="tuk" id="tuk">
-                    <label for="tuk">Tuk Tuk</label>
+                    <div class="options">
+                        <input type="radio" name="tuk" id="tuk" value="tuk">
+                        <label for="tuk">Tuk Tuk</label>
+                    </div>
                 </p>
 
                 <p>
 
                     Extras <br>
 
-                    <input type="checkbox" name="baby" id="baby">
-                    <label for="baby">Baby Seat</label> <br>
+                    <div class="options">
+                        <input type="checkbox" name="baby" id="baby">
+                        <label for="baby">Baby Seat</label> <br>
+                    </div>
 
-                    <input type="checkbox" name="wheelchair" id="wheelchair">
-                    <label for="wheelchair">Wheelchair Access</label> <br>
+                    <div class="options">
+                        <input type="checkbox" name="wheelchair" id="wheelchair">
+                        <label for="wheelchair">Wheelchair Access</label> <br>
+                    </div>
 
-                    <input type="checkbox" name="stock" id="stock">
-                    <label for="stock">Stock Tip</label>
+                    <div class="options">
+                        <input type="checkbox" name="stock" id="stock">
+                        <label for="stock">Stock Tip</label>
+                    </div>
 
                 </p>
 
@@ -73,11 +101,10 @@
 
     </div>
 
-        <div id="submit">
+        <!--Bouton d'envoi-->
 
-            <input type="submit" value="Submit Booking">
+            <input type="submit" value="Submit Booking" class="bouton">
         
-        </div>
     </form>
     
 </body>

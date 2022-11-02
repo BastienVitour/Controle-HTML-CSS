@@ -2,6 +2,8 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(242, 244, 211);
+    padding: 15px;
 }
 
 #form {
@@ -9,7 +11,36 @@ form {
 }
 
 fieldset {
-    display: flex;
-    flex-direction: column;
     border: none;
+}
+
+.rowpls {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+label {
+    margin-right: 15px;
+    flex: 1;
+}
+
+#text_inputs input, select {
+    height: 25px;
+    flex: 2;
+}
+
+.options {
+    margin: 5px 0px 5px 0px;
+}
+
+p + p {
+    margin-top: 0px;
+}
+
+.bouton {
+    border-radius: 0px;
+    background-color: grey;
+    color: white;
+    padding: 10px;
 }

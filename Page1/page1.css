@@ -4,33 +4,27 @@ body {
 }
 
 nav {
-    display: flex;
-    flex-direction: column;
     flex: 1;
     background-color: red;
     color: white;
-    height: 900px;
     padding-top: 15px;
-}
-
-.menu:hover {
-    background-color: rgb(255, 147, 147);
-    color: red;
-}
-
-.menu {
-    padding: 15px 200px 15px 0px;
-    margin: 0px 15px;
+    height:100vh;
 }
 
 a {
     text-decoration: none;
     color: currentColor;
+    display: block;
+    padding: 15px 200px 15px 0px;
+    margin: 0px 15px;
+}
+
+a:hover {
+    background-color: rgb(255, 147, 147);
+    color: red;
 }
 
 #not_nav {
-    display: flex;
-    flex-direction: column;
     flex: 4;
 }
 
@@ -40,7 +34,6 @@ header {
 
 #not_header {
     display: flex;
-    justify-content: space-between;
 }
 
 header, footer {
@@ -48,22 +41,20 @@ header, footer {
 }
 
 article {
-    height: 85%;
+    height: 60%;
 }
 
 footer {
-    height: 15%;
+    height: 26%;
 }
 
 #not_aside {
-    display: flex;
-    flex-direction: column;
     flex: 1;
 }
 
 aside {
     background-color: rgb(242, 244, 211);
-    height: 720px;
+    height: 72vh;
 }
 
 header, article, aside, footer {
