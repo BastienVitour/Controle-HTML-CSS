@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="page3.css">
+    <title>3ème maquette</title>
+</head>
+<body>
+
+    <form action="">
+
+        <div id="form">
+
+            <fieldset>
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="date-time">Pickup Date/Time</label>
+                <input type="datetime-local" name="date-time" id="date-time">
+
+                <label for="place">Pickup Place</label>
+                <select name="place" id="place">
+                    <option value="orly">Orly</option>
+                    <option value="roissy">Roissy</option>
+                    <option value="montparnasse">Montparnasse</option>
+                    <option value="nord">Gare du Nord</option>
+                    <option value="est">Gare de l'Est</option>
+                </select>
+
+                <label for="dropoff">Dropoff Place</label>
+                <input type="text" name="dropoff" id="dropoff">
+
+            </fieldset>
+
+            <fieldset>
+
+                <p>
+                    Which taxi do you require ? <br>
+
+                    <input type="radio" name="taxi" id="taxi" value="car">
+                    <label for="car">Car</label> <br>
+
+                    <input type="radio" name="taxi" id="taxi" value="van">
+                    <label for="van">Van</label> <br>
+
+                    <input type="radio" name="tuk" id="tuk">
+                    <label for="tuk">Tuk Tuk</label>
+                </p>
+
+                <p>
+
+                    Extras <br>
+
+                    <input type="checkbox" name="baby" id="baby">
+                    <label for="baby">Baby Seat</label> <br>
+
+                    <input type="checkbox" name="wheelchair" id="wheelchair">
+                    <label for="wheelchair">Wheelchair Access</label> <br>
+
+                    <input type="checkbox" name="stock" id="stock">
+                    <label for="stock">Stock Tip</label>
+
+                </p>
+
+            </fieldset>
+
+    </div>
+
+        <div id="submit">
+
+            <input type="submit" value="Submit Booking">
+        
+        </div>
+    </form>
+    
+</body>
+</html>

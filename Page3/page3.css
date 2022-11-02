@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form {
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
